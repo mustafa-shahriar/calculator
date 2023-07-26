@@ -13,7 +13,7 @@ function handleEvent(){
         let view = screen.innerHTML;
         screen.innerHTML = view.substring(0,view.length-1);
     }else if(add === "="){
-        screen.innerHTML = Function("return " + screen.innerHTML)();
+        screen.innerHTML = Function(`return  + ${screen.innerHTML}`)();
 
     }else {
         screen.innerHTML+=add;
